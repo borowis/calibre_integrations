@@ -4,3 +4,4 @@
 <p>You can read more about calibre and recipes here http://manual.calibre-ebook.com/news.html#tips-for-developing-new-recipes</p>
 <p>And you can google around for recipes, or create your own, or look here https://github.com/kovidgoyal/calibre 
 under recipes/ to find recipes created by community and by https://github.com/kovidgoyal and maintained by Kovid</p>
+<p>You should use ebook-convert ver. >= 0.8.51</p>
