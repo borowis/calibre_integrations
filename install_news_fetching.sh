@@ -9,9 +9,9 @@
 # to look for the correct name. Do not forget the .recipe suffix
 FULL_PATH="/home/borowis/Documents/calibre_kindle"
 EBOOK_CONVERT=`which ebook-convert`
-declare -a RECIPES=("${FULL_PATH}/recipes/coding_horror.recipe" "${FULL_PATH}/recipes/xkcd.recipe" "${FULL_PATH}/recipes/what_if.recipe")
-declare -a NAMES=("Coding_Horror" "XKCD" "What If") # postfix feed names and cron jobs keys
-declare -a UPDATE_TIMES=("20" "3" "10") # check for updates interval for every feed; in days; should be less than 28 I think
+declare -a RECIPES=("${FULL_PATH}/recipes/coding_horror.recipe" "${FULL_PATH}/recipes/xkcd.recipe" "${FULL_PATH}/recipes/what_if.recipe" "${FULL_PATH}/recipes/joelonsoftware.recipe" "${FULL_PATH}/recipes/guardian.recipe")
+declare -a NAMES=("Coding_Horror" "XKCD" "What_If" "Joel_on_Software" "Guardian") # postfix feed names and cron jobs keys; don't use SPACES (!)
+declare -a UPDATE_TIMES=("25" "10" "10" "25" "2") # check for updates interval for every feed; in days; should be less than 28 I think
 OUTDIR="${FULL_PATH}/converted" # conversion output directory
 CRON_TIME_PREFIX="@@min@@ 3 */@@days@@ * *" # time of day to run conversion; see more info on cron; you can change hours but not placeholders
 
